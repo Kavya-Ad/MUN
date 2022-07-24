@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=M+PLUS+1p&display=swap');
+
+:root {
+  --font-head :  'M PLUS 1p', sans-serif;
+  --font-cursive : 'Edu NSW ACT Foundation', cursive;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: #252525;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .fake-scroll {
+    position: absolute;
+    top: 0;
+    width: 1px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10%;
+    justify-items: end;
+    position: fixed;
+    top: 5em;
+    left: 0;
+    width: 100%;
+  }
+  
+  .image {
+    position: relative;
+    width: 300px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .image:nth-child(2n) {
+    justify-self: start;
+  }
+  .image:nth-child(1) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image1.jpg");
+  }
+
+  .image:nth-child(1)::after{
+    content: 'Secretary General';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(1)::before{
+    content: 'Abhaash Sharma';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+  .image:nth-child(2) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image2.jpg");
+  }
+
+  .image:nth-child(2)::after{
+    content: 'Director General of Operations';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(2)::before{
+    content: 'Shiwa Dhital';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+  
+  .image:nth-child(3) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image3.jpg");
+  }
+
+  .image:nth-child(3)::after{
+    content: 'Director General of Committees';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(3)::before{
+    content: 'Sitasha Thapa';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+
+  .image:nth-child(4) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image4.jpg");
+  }
+
+  .image:nth-child(4)::after{
+    content: 'Under Secretary General of Internal Delegations';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(4)::before{
+    content: 'Rajasi Gurubacharya';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+
+  .image:nth-child(5) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image5.jpg");
+  }
+
+  .image:nth-child(5)::after{
+    content: 'Under Secretary General of External Delegations';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(5)::before{
+    content: 'Aayushma Poudel';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+
+  .image:nth-child(6) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image6.jpg");
+  }
+
+  .image:nth-child(6)::after{
+    content: 'Under Secretary General of Outreach';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(6)::before{
+    content: ' Karmistha Sthapit';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+
+  .image:nth-child(7) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image7.jpg");
+  }
+
+  .image:nth-child(7)::after{
+    content: 'Under Secretary General of Technology and Branding';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(7)::before{
+    content: 'Ayushma Tuladhar';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+  .image:nth-child(8) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image8.jpg");
+  }
+
+  .image:nth-child(8)::after{
+    content: 'Under Secretary General of Business';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(8)::before{
+    content: ' Shubham Timilsina';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+  .image:nth-child(9) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image9.jpg");
+  }
+
+  .image:nth-child(9)::after{
+    content: 'Under Secretary General of General Assembly';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(9)::before{
+    content: 'Sophin Malla';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+  .image:nth-child(10) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image10.jpg");
+  }
+
+  .image:nth-child(10)::after{
+    content: 'Under Secretary General of Economic and Social Councils';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(10)::before{
+    content: 'Melissa Shrestha';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+
+  .image:nth-child(11) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image10.jpg");
+  }
+
+  .image:nth-child(11)::after{
+    content: 'Under Secretary General of Regional Bodies';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(11)::before{
+    content: 'Malisha Kushwaha';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+
+  .image:nth-child(12) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image10.jpg");
+  }
+
+  .image:nth-child(12)::after{
+    content: 'Under Secretary General of Specialized Agencies';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(12)::before{
+    content: 'Reety Basyal';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+
+  .image:nth-child(13) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image10.jpg");
+  }
+
+  .image:nth-child(13)::after{
+    content: 'Under Secretary General of Crisis Committees';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(13)::before{
+    content: 'Dechen Lama';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+
+  .image:nth-child(14) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image10.jpg");
+  }
+
+  .image:nth-child(14)::after{
+    content: 'Director of Security';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(14)::before{
+    content: 'Kashchit Bikram Thapa';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+
+  .image:nth-child(15) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image10.jpg");
+  }
+
+  .image:nth-child(15)::after{
+    content: 'Head of Logistic';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(15)::before{
+    content: 'Aayush Nakarmi';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+
+  .image:nth-child(16) {
+    background-image: url("https://cdn.jsdelivr.net/gh/lmgonzalves/scroll-based-animation/img/image10.jpg");
+  }
+
+  .image:nth-child(16)::after{
+    content: 'Secretary General';
+    position: absolute;
+    bottom: 200px; 
+    left: 0.5em; 
+    color : white ;
+    font-size : 28px;
+    font-family: var(--font-head);
+  }
+
+  .image:nth-child(16)::before{
+    content: 'Abhaash Sharma';
+    position: absolute;
+    bottom: 176px; 
+    left: 1em; 
+    color : white ;
+    font-size : 22px;
+    font-family: var(--font-cursive);
+  }
+  
+  @media screen and (max-width: 760px) {
+    .container {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  
+    .image:nth-child(2n) {
+      justify-self: center;
+    }
+  }
+
+
+
+  /* header  */
+
+.header {
+  color : #fff;
+  text-align : center;
+  transform: translateY(4em);
+  font-size : 30px;
+  font-family: var(--font-head);
+}
